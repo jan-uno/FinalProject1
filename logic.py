@@ -8,6 +8,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         Setting the error messages to be invisible
         and setting the further input and label boxes to be invisible
         and putting score labels and inputs into a list
+        :return: None
         """
 
         super().__init__()
