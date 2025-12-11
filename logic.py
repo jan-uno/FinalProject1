@@ -176,7 +176,9 @@ class Logic(QMainWindow, Ui_MainWindow):
                 score = int(score_text)
 
                 if score < 0 or score > 100:
-                    raise ValueError("Score must be between 0 and 100.")
+                    error_label.setText("Score must between 0 and 100.")
+                    error_label.setStyleSheet("color: red;")
+                    error_label.setVisible(True)
 
                 scores.append(score)
 
